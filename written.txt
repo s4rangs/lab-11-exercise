@@ -1,2 +1,2 @@
-2a.
-2b.
+2a. The unbatched rendering (pt 1) was an average of 109-112 fps and the batched implementation had an average of 112-114 (pt 2) with sf::Sprite. Although batching reduces the number of draw calls and improves rendering effiency, the performance may have been minimal in this test because the system was able to workload efficiently in both implementations. 
+2b. We can give each sprite different z-coords and pass it to the gl_Position in vertex shader. And then by enabling depth testing and clearing depth buffer every frame, openGl can decide which sprite should appear in front autonomously.
